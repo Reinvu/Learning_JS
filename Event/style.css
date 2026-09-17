@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+    width: 300px;
+}
+
+#card{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid black;
+}
+
+#in{
+    margin-top: 20px;
+}
+
+#reg{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    margin-top: 5px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
