@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    background-color: #3478f6;
+    color: white;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.deleteBtn {
+    background-color: #e74c3c;
+}
