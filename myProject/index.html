@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Фильмов</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>КиноКаталог</h1>
+        <input type="text" id="searchInput" placeholder="Поиск фильма по названию...">
+        <button id="logoutBtn" class="hidden">Выйти</button>
+    </header>
+
+    <div class="modal" id="authModal">
+        <form id="authForm" class="authForm">
+            <h2>Вход и регистрация</h2>
+
+            <label for="usernameInput">Логин</label>
+            <input id="usernameInput" type="text" placeholder="Минимум 6 символа" minlength="6" required>
+
+            <label for="passwordInput">Пароль</label>
+            <input id="passwordInput" type="password" placeholder="Минимум 8 символов" minlength="8" required>
+
+            <button type="submit" id="loginBtn">Войти</button>
+            <button type="submit" id="registerBtn">Зарегистрироваться</button>
+
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+
+    <main>
+        <p id="message"></p>
+        <section id="movies" class="products"></section>
+    </main>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
