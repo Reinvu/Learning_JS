@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f2f4f7;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Форма добавления книги */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Общие стили кнопок */
+button {
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+form button {
+    background-color: #2563eb;
+    color: white;
+}
+
+form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Сообщение об ошибке */
+#message {
+    color: #b91c1c;
+    margin-top: 10px;
+}
+
+/* Стили для счетчиков статистики */
+#stats {
+    background-color: #e5e7eb;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стили для блока поиска и фильтров */
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row; /* Изменил на строку для больших экранов */
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.controls input {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.controls select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.controls input:focus,
+.controls select:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    background-color: #e5e7eb;
+    color: #333333;
+}
+
+.filters button:hover {
+    background-color: #d1d5db;
+}
+
+/* Карточка книги */
+.book {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.book h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.book p {
+    margin: 10px 0;
+}
+
+.book button {
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: #e5e7eb;
+    color: #333333;
+}
+
+.book button:hover {
+    background-color: #d1d5db;
+}
+
+/* Последняя кнопка в карточке — удаление */
+.book button:last-child {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.book button:last-child:hover {
+    background-color: #fecaca;
+}
+
+/* Прочитанная книга */
+.read {
+    background-color: #ecfdf5;
+    border-color: #86cfa6;
+}
+
+@media (max-width: 600px) {
+    form, .controls {
+        flex-direction: column;
+    }
+
+    body {
+        margin: 20px auto;
+    }
+}

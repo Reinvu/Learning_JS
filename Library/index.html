@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Моя библеотека</h1>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Поиск книги по названию...">
+        <select id="statusFilter">
+            <option value="all">Все книги</option>
+            <option value="read">Прочитанные</option>
+            <option value="unread">Непрочитанные</option>
+        </select>
+    </div>
+
+    <form id="bookForm">
+        <input type="text" id="titleInput" placeholder="Введите название" required>
+        <input type="text" id="authorInput" placeholder="Введите имя автора" required>
+        <button type="submit">Добавить книгу</button>
+    </form>
+    <p id="message"></p>
+
+    <div id="stats">
+        Всего книг: <span id="totalCount">0</span> |
+        Прочитано: <span id="readCount">0</span> |
+        Осталось: <span id="unreadCount">0</span>
+    </div>
+
+    <div id="bookList"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
