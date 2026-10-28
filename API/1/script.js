@@ -14,6 +14,7 @@ async function fetchUsers() {
         const users = await response.json()
 
         renderUsers(users)
+        load.classList.add("dontSee")
 
         
 

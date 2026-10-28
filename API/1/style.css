@@ -21,6 +21,10 @@ body {
     padding: 5px 10px;
 }
 
+.dontSee{
+    display: none;
+}
+
 #listUsers {
     margin-top: 20px;
     display: grid;
